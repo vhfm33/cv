@@ -22,10 +22,38 @@
             </div>
         </header>
         <section class="content clearfix">
-            <div class="box-content yellow">
-            <h2>
-              <a name="education">Contato</a>
-            </h2>
+          <div class="form-container">
+            <div class="form-col">
+              <div class="InputAddOn">
+                <span class="InputAddOn-item">Nome</span> 
+                <input type="text" id="name" class="InputAddOn-field">
+              </div>
+              <div class="InputAddOn">
+                <span class="InputAddOn-item">Email</span> 
+                <input type="email" id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    placeholder="teste@teste.com"
+                    required="required" class="InputAddOn-field">
+              </div>
+            </div>
+            <div class="form-col">
+              <div class="InputAddOn">
+                <span class="InputAddOn-item">Fone</span> 
+                <input type="tel" id="phone" class="InputAddOn-field"
+                    pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
+                    placeholder="(XX) XXXX-XXXX">
+              </div>
+              <div class="InputAddOn">
+                <span class="InputAddOn-item">Assunto</span> 
+                <textarea rows="10" cols="50" id="sobre"></textarea>
+              </div>
+              <div class="InputAddOn">
+                <button class="InputAddOn-item">
+                  Enviar<span class="icon-star"></span>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
         <footer class="clearfix">
             <div class="box-social">
